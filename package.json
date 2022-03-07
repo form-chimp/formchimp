@@ -1,0 +1,31 @@
+{
+  "name": "form-chimp-sdk",
+  "version": "1.0.0",
+  "description": "A small library for interacting with the Form Chimp API.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cross-env MODE=development webpack -w",
+    "build":"cross-env MODE=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/form-chimp/form-chimp-sdk.git"
+  },
+  "keywords": [
+    "api",
+    "form-chimp"
+  ],
+  "author": "Anas Mohamed",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/form-chimp/form-chimp-sdk/issues"
+  },
+  "homepage": "https://github.com/form-chimp/form-chimp-sdk#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
