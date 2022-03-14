@@ -1,5 +1,5 @@
 {
-  "name": "form-chimp-sdk",
+  "name": "form-chimp-js",
   "version": "1.0.0",
   "description": "A small library for interacting with the Form Chimp API.",
   "main": "src/index.js",
