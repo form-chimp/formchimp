@@ -4,11 +4,12 @@ import axios from "axios";
 export default class Chimp{
     /**
      * 
-     * @param {String} formURL The `url` of the Form Chimp form.
+     * @param {String} form_id The `id` of the Form Chimp form. Found in the dashboard.
      */
-    constructor(formURL){
+    constructor(form_id){
 
-        this.formURL = formURL
+        this.form_id = form_id
+        this.api_link = `https://api.formchimp.app/?form=`
 
     }
 
@@ -19,7 +20,7 @@ export default class Chimp{
      * @returns `Object` containing the result of the operation.
      */
     async post(data){
-        let res =  await axios.post(this.formURL,data)
+        let res =  await axios.post(this.api_link+this.form_id,data)
         .then((x)=>{
             
             return x
